@@ -1,0 +1,19 @@
+import React from "react";
+
+interface FilterButtonProps {
+  id: string;
+  name: string;
+  completed: boolean;
+}
+
+function FilterButton(props:FilterButtonProps) {
+  return (
+    <button type="button" className="btn toggle-btn" aria-pressed="true">
+      <span className="visually-hidden">Show </span>
+      <span>all </span>
+      <span className="visually-hidden"> tasks</span>
+    </button>
+  );
+}
+
+export default FilterButton;
